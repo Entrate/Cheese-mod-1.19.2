@@ -1,5 +1,9 @@
 {
   "item.cheesemod.oldcheese": "Old Cheese",
-  "item.cheesemod.cheese": "Cheese"
+  "item.cheesemod.cheese": "Cheese",
+
+  "block.cheesemod.zircon_block": "Block of zircon",
+
+  "itemGroup.cheesetab": "Cheese Mod Tab"
 
 }

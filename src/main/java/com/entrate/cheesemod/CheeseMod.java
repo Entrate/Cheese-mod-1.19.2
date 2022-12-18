@@ -1,5 +1,6 @@
 package com.entrate.cheesemod;
 
+import com.entrate.cheesemod.block.ModBlocks;
 import com.entrate.cheesemod.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
@@ -22,7 +23,7 @@ public class CheeseMod {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
-
+        ModBlocks.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);

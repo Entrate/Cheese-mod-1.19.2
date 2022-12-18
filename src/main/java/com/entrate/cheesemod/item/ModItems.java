@@ -16,7 +16,7 @@ public class ModItems {
     public static final RegistryObject<Item> OLDCHEESE = ITEMS.register("oldcheese",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
     public static final RegistryObject<Item> CHEESE = ITEMS.register("cheese",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD)));
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(ModFoods.CHEESE)));
 
     public static void  register(IEventBus eventBus) {
         ITEMS.register(eventBus);
