@@ -14,6 +14,8 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, CheeseMod.MOD_ID);
 
     public static final RegistryObject<Item> OLDCHEESE = ITEMS.register("oldcheese",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+    public static final RegistryObject<Item> CHEESE = ITEMS.register("cheese",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD)));
 
     public static void  register(IEventBus eventBus) {
