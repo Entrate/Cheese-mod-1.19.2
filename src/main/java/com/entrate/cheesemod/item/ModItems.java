@@ -1,6 +1,7 @@
 package com.entrate.cheesemod.item;
 
 import com.entrate.cheesemod.CheeseMod;
+import com.entrate.cheesemod.item.custom.CheeseItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -17,7 +18,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
     public static final RegistryObject<Item> CHEESE = ITEMS.register("cheese",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(ModFoods.CHEESE)));
-
+    public static final RegistryObject<Item> MYSTICAL_CHEESE = ITEMS.register("mystical_cheese",
+            () -> new CheeseItem(new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(1)));
     public static void  register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
