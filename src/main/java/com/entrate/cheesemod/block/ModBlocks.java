@@ -27,7 +27,9 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GLASS).strength(6f)
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.CHEESE_TAB);
 
-
+    public static final  RegistryObject<Block> CHEESE_BLOCK = registerBlock("cheese_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.WOOL).sound(SoundType.SAND).strength(1f)
+                    ), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 
 
