@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cheesemod:legendary_milk_bucket"
+    }
+  ],
+  "result": {
+    "item": "cheesemod:legendary_cheese",
+    "count": 1
+  }
+}

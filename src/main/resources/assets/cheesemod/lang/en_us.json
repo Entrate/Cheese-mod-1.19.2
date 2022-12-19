@@ -1,7 +1,10 @@
 {
   "item.cheesemod.oldcheese": "Old Cheese",
   "item.cheesemod.cheese": "Cheese",
-  "item.cheesemod.mystical_cheese": "Mystical Cheese",
+  "item.cheesemod.mystical_cheese": "Eye Of Knowledge",
+  "item.cheesemod.legendary_cheese": "Legendary Cheese",
+  "item.cheesemod.godly_cheese": "Godly Cheese",
+  "item.cheesemod.legendary_milk_bucket": "Legendary Milk Bucket",
 
   "block.cheesemod.zircon_block": "Block of zircon",
   "block.cheesemod.cheese_block": "Block of cheese",

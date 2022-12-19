@@ -1,6 +1,7 @@
 package com.entrate.cheesemod.block;
 
 import com.entrate.cheesemod.CheeseMod;
+import com.entrate.cheesemod.block.custom.JumpyBlock;
 import com.entrate.cheesemod.item.ModCreativeModeTab;
 import com.entrate.cheesemod.item.ModItems;
 import net.minecraft.world.entity.boss.enderdragon.EnderDragon;
@@ -28,7 +29,7 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.CHEESE_TAB);
 
     public static final  RegistryObject<Block> CHEESE_BLOCK = registerBlock("cheese_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.WOOL).sound(SoundType.SAND).strength(1f)
+            () -> new JumpyBlock(BlockBehaviour.Properties.of(Material.WOOL).sound(SoundType.SAND).strength(0.7f)
                     ), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 
