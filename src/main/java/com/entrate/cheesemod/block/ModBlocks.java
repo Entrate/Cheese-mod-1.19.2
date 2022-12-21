@@ -2,6 +2,7 @@ package com.entrate.cheesemod.block;
 
 import com.entrate.cheesemod.CheeseMod;
 import com.entrate.cheesemod.block.custom.JumpyBlock;
+import com.entrate.cheesemod.block.custom.ZirconLampBlock;
 import com.entrate.cheesemod.item.ModCreativeModeTab;
 import com.entrate.cheesemod.item.ModItems;
 import net.minecraft.world.entity.boss.enderdragon.EnderDragon;
@@ -32,6 +33,9 @@ public class ModBlocks {
             () -> new JumpyBlock(BlockBehaviour.Properties.of(Material.WOOL).sound(SoundType.SAND).strength(0.7f)
                     ), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
+    public static final  RegistryObject<Block> ZIRCON_LAMP = registerBlock("zircon_lamp",
+            () -> new ZirconLampBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GLASS).strength(6f)
+                    .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(ZirconLampBlock.LIT) ? 15 : 0)), ModCreativeModeTab.CHEESE_TAB);
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:netherite_ingot"
+    },
+    {
+      "item": "cheesemod:legendary_cheese"
+    }
+
+  ],
+  "result": {
+    "item": "cheesemod:netherite_legendary_cheese",
+    "count": 1
+  }
+}

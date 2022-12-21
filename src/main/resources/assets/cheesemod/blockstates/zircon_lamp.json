@@ -1,0 +1,7 @@
+{
+  "variants": {
+   "lit=true": { "model":  "cheesemod:block/zircon_lamp_on" },
+    "lit=false": { "model":  "cheesemod:block/zircon_lamp_off" }
+
+  }
+}
