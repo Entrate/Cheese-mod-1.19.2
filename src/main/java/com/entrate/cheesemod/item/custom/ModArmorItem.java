@@ -17,7 +17,7 @@ public class ModArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
                     .put(ModArmourMaterials.NETHERITE_LEGENDARY_CHEESE,
-                            new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 100, 3)).build();
+                            new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 100, 7)).build();
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP_2 =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
                     .put(ModArmourMaterials.NETHERITE_LEGENDARY_CHEESE,

@@ -25,9 +25,8 @@ public class ModItems {
     public static final RegistryObject<Item> CHEESE = ITEMS.register("cheese",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(ModFoods.CHEESE)));
 
-    public static final RegistryObject<Item> TDCHEESE = ITEMS.register("tdcheese",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(ModFoods.CHEESE)));
-
+    public static final RegistryObject<Item> CHEESE_STAKE = ITEMS.register("cheese_stake",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(ModFoods.CHEESE_STAKE)));
 
     public static final RegistryObject<Item> MYSTICAL_CHEESE = ITEMS.register("mystical_cheese",
             () -> new CheeseItem(new Item.Properties().tab(ModCreativeModeTab.CHEESE_TAB).stacksTo(1)));
@@ -56,18 +55,20 @@ public class ModItems {
     public static final RegistryObject<Item> NETHERITE_LEGENDARY_CHEESE_HELMET = ITEMS.register("netherite_legendary_cheese_helmet",
             () -> new ModArmorItem(ModArmourMaterials.NETHERITE_LEGENDARY_CHEESE, EquipmentSlot.HEAD,
                     new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+
     public static final RegistryObject<Item> NETHERITE_LEGENDARY_CHEESE_CHESTPLATE = ITEMS.register("netherite_legendary_cheese_helmet_chestplate",
             () -> new ArmorItem(ModArmourMaterials.NETHERITE_LEGENDARY_CHEESE, EquipmentSlot.CHEST,
                     new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+
     public static final RegistryObject<Item> NETHERITE_LEGENDARY_CHEESE_LEGGINGS = ITEMS.register("netherite_legendary_cheese_leggings",
             () -> new ArmorItem(ModArmourMaterials.NETHERITE_LEGENDARY_CHEESE, EquipmentSlot.LEGS,
                     new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+
     public static final RegistryObject<Item> NETHERITE_LEGENDARY_CHEESE_BOOTS = ITEMS.register("netherite_legendary_cheese_boots",
             () -> new ArmorItem(ModArmourMaterials.NETHERITE_LEGENDARY_CHEESE, EquipmentSlot.FEET,
                     new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
 
-
-
+    
 
     public static void  register(IEventBus eventBus) {
         ITEMS.register(eventBus);
