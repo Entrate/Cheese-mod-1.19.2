@@ -4,17 +4,22 @@ import com.entrate.cheesemod.CheeseMod;
 import com.entrate.cheesemod.item.custom.CheeseItem;
 import com.entrate.cheesemod.item.custom.CheeseSwordItem;
 import com.entrate.cheesemod.item.custom.ModArmorItem;
+import net.minecraft.core.Direction;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.*;
+import net.minecraft.world.level.ItemLike;
+import net.minecraftforge.common.capabilities.Capability;
+import net.minecraftforge.common.extensions.IForgeItemStack;
+import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
-public class ModItems {
+public class ModItems implements IForgeItemStack {
 
     public  static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, CheeseMod.MOD_ID);
@@ -74,4 +79,13 @@ public class ModItems {
         ITEMS.register(eventBus);
     }
 
+    @Override
+    public @NotNull <T> LazyOptional<T> getCapability(@NotNull Capability<T> cap, @Nullable Direction side) {
+        return null;
+    }
+
+    @Override
+    public void deserializeNBT(CompoundTag nbt) {
+
+    }
 }
