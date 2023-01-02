@@ -22,6 +22,8 @@
   "block.cheesemod.zircon_lamp": "Zircon Lamp",
   "block.cheesemod.zircon_block": "Block Of Zircon",
   "block.cheesemod.cheese_block": "Block Of cheese",
+  "block.cheesemod.hard_cheese_block": "Hard Cheese Block",
+
   "itemGroup.cheesetab": "Cheese Mod Tab"
 
 }

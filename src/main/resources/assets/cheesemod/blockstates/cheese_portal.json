@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "axis=z": { "model": "cheesemod:block/cheese_portal_ew" },
+    "axis=x": { "model": "cheesemod:block/cheese_portal_ns" }
+  }
+}

@@ -5,7 +5,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.ForgeTier;
 
 public class ModTiers {
-    public static  final ForgeTier LEGENDARY_CHEESE_BROKEN = new ForgeTier(1,900,2f,
+    public static  final ForgeTier LEGENDARY_CHEESE_BROKEN = new ForgeTier(1,-1,2f,
             1f, 0, BlockTags.NEEDS_STONE_TOOL,
             () -> Ingredient.of(ModItems.CHEESE.get()));
 

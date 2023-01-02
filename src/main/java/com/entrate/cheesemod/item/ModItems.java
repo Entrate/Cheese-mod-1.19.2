@@ -1,6 +1,7 @@
 package com.entrate.cheesemod.item;
 
 import com.entrate.cheesemod.CheeseMod;
+import com.entrate.cheesemod.item.custom.CatalystItem;
 import com.entrate.cheesemod.item.custom.CheeseItem;
 import com.entrate.cheesemod.item.custom.CheeseSwordItem;
 import com.entrate.cheesemod.item.custom.ModArmorItem;
@@ -37,7 +38,7 @@ public class ModItems implements IForgeItemStack {
             () -> new CheeseItem(new Item.Properties().tab(ModCreativeModeTab.CHEESE_TAB).stacksTo(1)));
 
     public static final RegistryObject<Item> LEGENDARY_CHEESE = ITEMS.register("legendary_cheese",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+            CatalystItem::new);
 
     public static final RegistryObject<Item> LEGENDARY_MILK_BUCKET = ITEMS.register("legendary_milk_bucket",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS).stacksTo(1)));

@@ -3,9 +3,14 @@ package com.entrate.cheesemod;
 import com.entrate.cheesemod.block.ModBlocks;
 import com.entrate.cheesemod.entity.ModEntityTypes;
 import com.entrate.cheesemod.entity.client.renderer.LegendaryCowRenderer;
+import com.entrate.cheesemod.events.ModEvents;
 import com.entrate.cheesemod.item.ModItems;
+import com.entrate.cheesemod.villager.ModPOIs;
+import com.entrate.cheesemod.villager.ModVillagers;
 import com.entrate.cheesemod.world.dimension.ModDimensions;
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -29,9 +34,15 @@ public class CheeseMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-        ModEntityTypes.register(modEventBus);
 
         ModDimensions.register();
+        ModEntityTypes.register(modEventBus);
+
+        ModVillagers.register(modEventBus);
+        ModPOIs.register(modEventBus);
+
+
+
 
         GeckoLib.initialize();
         modEventBus.addListener(this::commonSetup);
@@ -47,7 +58,11 @@ public class CheeseMod {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+
             EntityRenderers.register(ModEntityTypes.LEGENDARY_COW.get(), LegendaryCowRenderer::new);
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.CHEESE_PORTAL.get(), RenderType.translucent());
+            // I think setRenderLayer is set for removal
+
 
         }
     }
