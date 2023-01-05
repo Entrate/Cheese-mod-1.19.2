@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "item": "cheesemod:netherite_legendary_cheese_chestplate",
+      "nbt": "{Damage:0}"
+    },
+    "title": "Cover Me In Cheese",
+    "description": "Yep It's Real Armor",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "cheesemod:textures/block/cheese_block.png"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cheesemod:netherite_legendary_cheese_helmet"
+            ]
+          },
+          {
+            "items": [
+              "cheesemod:netherite_legendary_cheese_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "cheesemod:netherite_legendary_cheese_leggings"
+            ]
+          },
+          {
+            "items": [
+              "cheesemod:netherite_legendary_cheese_boots"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

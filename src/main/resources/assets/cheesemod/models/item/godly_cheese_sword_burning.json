@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "cheesemod:item/godly_cheese_sword_burning"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "cheesemod:legendary_milk_bucket"
+    },
+    "title": "It's Yellow?",
+    "description": "The Milk Is Yellow???",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "cheesemod:textures/block/cheese_block.png"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cheesemod:legendary_milk_bucket"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "cheesemod:legendary_cheese_sword_broken",
+      "nbt": "{Damage:0}"
+    },
+    "title": "The Legend Was true... Wait It's BROKEN",
+    "description": "Was The Legend False All Along",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "cheesemod:textures/block/cheese_block.png"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cheesemod:legendary_cheese_sword_broken"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

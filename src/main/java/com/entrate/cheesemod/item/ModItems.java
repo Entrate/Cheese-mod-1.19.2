@@ -1,15 +1,11 @@
 package com.entrate.cheesemod.item;
 
 import com.entrate.cheesemod.CheeseMod;
-import com.entrate.cheesemod.item.custom.CatalystItem;
-import com.entrate.cheesemod.item.custom.CheeseItem;
-import com.entrate.cheesemod.item.custom.CheeseSwordItem;
-import com.entrate.cheesemod.item.custom.ModArmorItem;
+import com.entrate.cheesemod.item.custom.*;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
-import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.extensions.IForgeItemStack;
 import net.minecraftforge.common.util.LazyOptional;
@@ -31,8 +27,8 @@ public class ModItems implements IForgeItemStack {
     public static final RegistryObject<Item> CHEESE = ITEMS.register("cheese",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(ModFoods.CHEESE)));
 
-    public static final RegistryObject<Item> CHEESE_STAKE = ITEMS.register("cheese_stake",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(ModFoods.CHEESE_STAKE)));
+    public static final RegistryObject<Item> CHEESE_STEAK = ITEMS.register("cheese_steak",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(ModFoods.CHEESE_STEAK)));
 
     public static final RegistryObject<Item> MYSTICAL_CHEESE = ITEMS.register("mystical_cheese",
             () -> new CheeseItem(new Item.Properties().tab(ModCreativeModeTab.CHEESE_TAB).stacksTo(1)));
@@ -49,6 +45,9 @@ public class ModItems implements IForgeItemStack {
     public static final RegistryObject<Item> NETHERITE_LEGENDARY_CHEESE = ITEMS.register("netherite_legendary_cheese",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
 
+    public static final RegistryObject<Item> RATKINGS_SPOON = ITEMS.register("ratkings_spoon",
+            () -> new SwordItem(ModTiers.LEGENDARY_CHEESE_BROKEN, -1, 16f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+
     public static final RegistryObject<Item> LEGENDARY_CHEESE_SWORD_BROKEN = ITEMS.register("legendary_cheese_sword_broken",
             () -> new SwordItem(ModTiers.LEGENDARY_CHEESE_BROKEN, 2, -2.4f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
 
@@ -58,20 +57,26 @@ public class ModItems implements IForgeItemStack {
     public static final RegistryObject<Item> LEGENDARY_CHEESE_SWORD_BURNING = ITEMS.register("legendary_cheese_sword_burning",
             () -> new CheeseSwordItem(ModTiers.LEGENDARY_CHEESE, 1, -2.4f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
 
+    public static final RegistryObject<Item> GODLY_CHEESE_SWORD = ITEMS.register("godly_cheese_sword",
+            () -> new CheeseSwordItem(ModTiers.GODLY_CHEESE, 1, -2.4f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+
+    public static final RegistryObject<Item> GODLY_CHEESE_SWORD_BURNING = ITEMS.register("godly_cheese_sword_burning",
+            () -> new CheeseSwordItem(ModTiers.GODLY_CHEESE, 1, -2.4f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+
     public static final RegistryObject<Item> NETHERITE_LEGENDARY_CHEESE_HELMET = ITEMS.register("netherite_legendary_cheese_helmet",
-            () -> new ModArmorItem(ModArmourMaterials.NETHERITE_LEGENDARY_CHEESE, EquipmentSlot.HEAD,
+            () -> new ModHelmetArmorItem(ModArmourMaterials.NETHERITE_LEGENDARY_CHEESE, EquipmentSlot.HEAD,
                     new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
 
-    public static final RegistryObject<Item> NETHERITE_LEGENDARY_CHEESE_CHESTPLATE = ITEMS.register("netherite_legendary_cheese_helmet_chestplate",
-            () -> new ArmorItem(ModArmourMaterials.NETHERITE_LEGENDARY_CHEESE, EquipmentSlot.CHEST,
+    public static final RegistryObject<Item> NETHERITE_LEGENDARY_CHEESE_CHESTPLATE = ITEMS.register("netherite_legendary_cheese_chestplate",
+            () -> new ModChestArmorItem(ModArmourMaterials.NETHERITE_LEGENDARY_CHEESE, EquipmentSlot.CHEST,
                     new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
 
     public static final RegistryObject<Item> NETHERITE_LEGENDARY_CHEESE_LEGGINGS = ITEMS.register("netherite_legendary_cheese_leggings",
-            () -> new ArmorItem(ModArmourMaterials.NETHERITE_LEGENDARY_CHEESE, EquipmentSlot.LEGS,
+            () -> new ModLeggingsArmorItem(ModArmourMaterials.NETHERITE_LEGENDARY_CHEESE, EquipmentSlot.LEGS,
                     new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
 
     public static final RegistryObject<Item> NETHERITE_LEGENDARY_CHEESE_BOOTS = ITEMS.register("netherite_legendary_cheese_boots",
-            () -> new ArmorItem(ModArmourMaterials.NETHERITE_LEGENDARY_CHEESE, EquipmentSlot.FEET,
+            () -> new ModBootsArmorItem(ModArmourMaterials.NETHERITE_LEGENDARY_CHEESE, EquipmentSlot.FEET,
                     new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
 
     

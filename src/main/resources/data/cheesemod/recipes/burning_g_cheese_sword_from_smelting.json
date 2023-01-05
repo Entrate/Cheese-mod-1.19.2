@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "cheesemod:godly_cheese_sword"
+    }
+  ],
+  "result": "cheesemod:godly_cheese_sword_burning"
+}

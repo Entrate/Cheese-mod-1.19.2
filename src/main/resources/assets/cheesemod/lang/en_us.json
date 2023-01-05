@@ -1,7 +1,7 @@
 {
   "item.cheesemod.oldcheese": "Rotten Cheese",
   "item.cheesemod.cheese": "Cheese",
-  "item.cheesemod.cheese_stake": "Cheese Stake",
+  "item.cheesemod.cheese_steak": "Cheese Steak",
   "item.cheesemod.mystical_cheese": "Eye Of Knowledge",
   "item.cheesemod.legendary_cheese": "Legendary Cheese",
   "item.cheesemod.godly_cheese": "Godly Cheese",
@@ -10,10 +10,12 @@
   "item.cheesemod.legendary_cheese_sword_broken": "Legendary Cheese Sword (incomplete)",
   "item.cheesemod.legendary_cheese_sword": "Legendary Cheese Sword",
   "item.cheesemod.legendary_cheese_sword_burning": "Legendary Burning Cheese Sword",
-
+  "item.cheesemod.godly_cheese_sword": "Godly Cheese Sword",
+  "item.cheesemod.godly_cheese_sword_burning": "Godly Burning Cheese Sword",
+  "item.cheesemod.ratkings_spoon": "Spoon Of The Ratking",
 
   "item.cheesemod.netherite_legendary_cheese_helmet": "Legendary Netherite Cheese Helmet",
-  "item.cheesemod.netherite_legendary_cheese_helmet_chestplate": "Legendary Netherite Cheese Chestplate",
+  "item.cheesemod.netherite_legendary_cheese_chestplate": "Legendary Netherite Cheese Chestplate",
   "item.cheesemod.netherite_legendary_cheese_leggings": "Legendary Netherite Cheese Leggings",
   "item.cheesemod.netherite_legendary_cheese_boots": "Legendary Netherite Cheese Boots",
 
@@ -23,6 +25,7 @@
   "block.cheesemod.zircon_block": "Block Of Zircon",
   "block.cheesemod.cheese_block": "Block Of cheese",
   "block.cheesemod.hard_cheese_block": "Hard Cheese Block",
+  "block.cheesemod.fake_hard_cheese_block": "Fake Hard Cheese Block",
 
   "itemGroup.cheesetab": "Cheese Mod Tab"
 

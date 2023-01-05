@@ -3,6 +3,7 @@ package com.entrate.cheesemod.block;
 import com.entrate.cheesemod.CheeseMod;
 import com.entrate.cheesemod.block.custom.JumpyBlock;
 import com.entrate.cheesemod.block.custom.KJPortalBlock;
+import com.entrate.cheesemod.block.custom.NoJumpBlock;
 import com.entrate.cheesemod.block.custom.ZirconLampBlock;
 import com.entrate.cheesemod.item.ModCreativeModeTab;
 import com.entrate.cheesemod.item.ModItems;
@@ -36,8 +37,12 @@ public class ModBlocks {
                     ), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
     public static final  RegistryObject<Block> HARD_CHEESE_BLOCK = registerBlock("hard_cheese_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(-1f, 360000))
+            () -> new NoJumpBlock(BlockBehaviour.Properties.of(Material.STONE).strength(-1f, 360_000_000))
                     , CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    public static final  RegistryObject<Block> FAKE_HARD_CHEESE_BLOCK = registerBlock("fake_hard_cheese_block",
+            () -> new NoJumpBlock(BlockBehaviour.Properties.of(Material.WOOL).strength(3f, 360_000_000))
+            , CreativeModeTab.TAB_BUILDING_BLOCKS);
 
     public static final  RegistryObject<Block> ZIRCON_LAMP = registerBlock("zircon_lamp",
             () -> new ZirconLampBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GLASS).strength(6f)

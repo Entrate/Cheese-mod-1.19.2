@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "cheesemod:legendary_cheese_sword",
+      "nbt": "{Damage:0}"
+    },
+    "title": "It's The Legendary Super Saiyan... Wait No It's a Sword",
+    "description": "I Thought I Was About To Summon Goku",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "cheesemod:textures/block/cheese_block.png"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cheesemod:legendary_cheese_sword"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

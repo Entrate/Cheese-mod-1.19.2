@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bread"
+    },
+    {
+      "item": "minecraft:cooked_beef"
+    },
+    {
+      "item": "cheesemod:cheese"
+    }
+
+  ],
+  "result": {
+    "item": "cheesemod:cheese_steak",
+    "count": 1
+  }
+}
