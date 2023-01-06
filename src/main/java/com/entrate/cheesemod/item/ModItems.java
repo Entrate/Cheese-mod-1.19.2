@@ -29,10 +29,10 @@ public class ModItems implements IForgeItemStack {
 
     public static final RegistryObject<Item> CHEESE_STEAK = ITEMS.register("cheese_steak",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(ModFoods.CHEESE_STEAK)));
-
+/*
     public static final RegistryObject<Item> MYSTICAL_CHEESE = ITEMS.register("mystical_cheese",
-            () -> new CheeseItem(new Item.Properties().tab(ModCreativeModeTab.CHEESE_TAB).stacksTo(1)));
-
+           () -> new CheeseItem(new Item.Properties().tab(ModCreativeModeTab.CHEESE_TAB).stacksTo(1)));
+*/
     public static final RegistryObject<Item> LEGENDARY_CHEESE = ITEMS.register("legendary_cheese",
             CatalystItem::new);
 

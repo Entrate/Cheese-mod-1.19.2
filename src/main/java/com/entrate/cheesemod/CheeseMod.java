@@ -3,8 +3,10 @@ package com.entrate.cheesemod;
 import com.entrate.cheesemod.block.ModBlocks;
 import com.entrate.cheesemod.entity.ModEntityTypes;
 import com.entrate.cheesemod.entity.client.renderer.LegendaryCowRenderer;
+import com.entrate.cheesemod.entity.client.renderer.RatBossRenderer;
 import com.entrate.cheesemod.events.ModEvents;
 import com.entrate.cheesemod.item.ModItems;
+import com.entrate.cheesemod.sound.ModSounds;
 import com.entrate.cheesemod.villager.ModPOIs;
 import com.entrate.cheesemod.villager.ModVillagers;
 import com.entrate.cheesemod.world.dimension.ModDimensions;
@@ -38,6 +40,9 @@ public class CheeseMod {
         ModDimensions.register();
         ModEntityTypes.register(modEventBus);
 
+        ModSounds.register(modEventBus);
+
+
         ModVillagers.register(modEventBus);
         ModPOIs.register(modEventBus);
 
@@ -62,7 +67,7 @@ public class CheeseMod {
             EntityRenderers.register(ModEntityTypes.LEGENDARY_COW.get(), LegendaryCowRenderer::new);
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.CHEESE_PORTAL.get(), RenderType.translucent());
             // I think setRenderLayer is set for removal
-
+            EntityRenderers.register(ModEntityTypes.RAT_BOSS.get(), RatBossRenderer::new);
 
         }
     }

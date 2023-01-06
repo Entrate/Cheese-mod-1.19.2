@@ -1,0 +1,14 @@
+{
+  "boss_sound_track": {
+    "subtitle": "sounds.cheesemod.boss_sound_track",
+    "sounds": [
+      "cheesemod:boss_sound_track"
+    ]
+  },
+  "vine_boom": {
+  "subtitle": "sounds.cheesemod.vine_boom",
+  "sounds": [
+    "cheesemod:vine_boom"
+    ]
+  }
+}

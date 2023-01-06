@@ -20,6 +20,7 @@
   "item.cheesemod.netherite_legendary_cheese_boots": "Legendary Netherite Cheese Boots",
 
   "entity.cheesemod.legendary_cow": "Legendary Cow",
+  "entity.cheesemod.rat_boss": "Rat King",
 
   "block.cheesemod.zircon_lamp": "Zircon Lamp",
   "block.cheesemod.zircon_block": "Block Of Zircon",
@@ -27,6 +28,7 @@
   "block.cheesemod.hard_cheese_block": "Hard Cheese Block",
   "block.cheesemod.fake_hard_cheese_block": "Fake Hard Cheese Block",
 
-  "itemGroup.cheesetab": "Cheese Mod Tab"
-
+  "itemGroup.cheesetab": "Cheese Mod Tab",
+  "sounds.cheesemod.vine_boom": "Boom",
+  "sounds.cheesemod.boss_sound_track": "The Song"
 }

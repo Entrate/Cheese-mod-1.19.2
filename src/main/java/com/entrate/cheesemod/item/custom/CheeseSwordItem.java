@@ -1,5 +1,8 @@
 package com.entrate.cheesemod.item.custom;
 
+import com.entrate.cheesemod.entity.ModEntityTypes;
+import com.entrate.cheesemod.entity.cutom.RatKingBossEntity;
+import com.entrate.cheesemod.sound.ModSounds;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
@@ -7,6 +10,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraftforge.event.level.NoteBlockEvent;
 
 public class CheeseSwordItem extends SwordItem {
     public CheeseSwordItem(Tier p_43269_, int p_43270_, float p_43271_, Properties p_43272_) {
@@ -24,7 +28,6 @@ public class CheeseSwordItem extends SwordItem {
         return super.hurtEnemy(itemStack, livingEntity, entity);
     }
 }
-
 
 
 
