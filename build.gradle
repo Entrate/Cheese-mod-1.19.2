@@ -128,7 +128,7 @@ repositories {
         url = "https://modmaven.dev"
     }
     maven {
-        url "https://cursemaven.com"
+        url "https://www.cursemaven.com"
         content {
             includeGroup "curse.maven"
         }

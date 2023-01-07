@@ -33,7 +33,7 @@ public class CheeseMod {
     public CheeseMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
+        GeckoLib.initialize();
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -49,7 +49,6 @@ public class CheeseMod {
 
 
 
-        GeckoLib.initialize();
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
     }

@@ -5,7 +5,6 @@ import com.entrate.cheesemod.block.custom.JumpyBlock;
 import com.entrate.cheesemod.block.custom.KJPortalBlock;
 import com.entrate.cheesemod.block.custom.NoJumpBlock;
 import com.entrate.cheesemod.block.custom.ZirconLampBlock;
-import com.entrate.cheesemod.item.ModCreativeModeTab;
 import com.entrate.cheesemod.item.ModItems;
 import net.minecraft.world.entity.boss.enderdragon.EnderDragon;
 import net.minecraft.world.item.BlockItem;
