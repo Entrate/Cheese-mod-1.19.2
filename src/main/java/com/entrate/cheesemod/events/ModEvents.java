@@ -52,6 +52,7 @@ public class ModEvents {
                 Player player = ((Player) event.getSource().getDirectEntity());
                 if (player.getMainHandItem().getItem() == Items.WOODEN_SWORD) {
                     player.playSound(ModSounds.VINE_BOOM.get(), 3f, 1f);
+
                 }
             }
         }

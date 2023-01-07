@@ -28,9 +28,9 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
         DeferredRegister.create(ForgeRegistries.BLOCKS, CheeseMod.MOD_ID);
 
-    public static final  RegistryObject<Block> ZIRCON_BLOCK = registerBlock("zircon_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GLASS).strength(6f)
-                    .requiresCorrectToolForDrops()), ModCreativeModeTab.CHEESE_TAB);
+  //  public static final  RegistryObject<Block> ZIRCON_BLOCK = registerBlock("zircon_block",
+  //          () -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GLASS).strength(6f)
+  //                  .requiresCorrectToolForDrops()), ModCreativeModeTab.CHEESE_TAB);
 
     public static final  RegistryObject<Block> CHEESE_BLOCK = registerBlock("cheese_block",
             () -> new JumpyBlock(BlockBehaviour.Properties.of(Material.WOOL).sound(SoundType.SAND).strength(0.7f)
@@ -44,9 +44,9 @@ public class ModBlocks {
             () -> new NoJumpBlock(BlockBehaviour.Properties.of(Material.WOOL).strength(3f, 360_000_000))
             , CreativeModeTab.TAB_BUILDING_BLOCKS);
 
-    public static final  RegistryObject<Block> ZIRCON_LAMP = registerBlock("zircon_lamp",
-            () -> new ZirconLampBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GLASS).strength(6f)
-                    .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(ZirconLampBlock.LIT) ? 15 : 0)), ModCreativeModeTab.CHEESE_TAB);
+   // public static final  RegistryObject<Block> ZIRCON_LAMP = registerBlock("zircon_lamp",
+   //         () -> new ZirconLampBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GLASS).strength(6f)
+   //                 .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(ZirconLampBlock.LIT) ? 15 : 0)), ModCreativeModeTab.CHEESE_TAB);
 
     public static final  RegistryObject<Block> CHEESE_PORTAL = registerBlockWithoutBlockItem("cheese_portal",
           KJPortalBlock::new);
